@@ -41,3 +41,5 @@ public class ExampleCommand extends Command {
     return false;
   }
 }
+//yo whats up its me dougdoug and today i am making a code to kill all of twitch chat
+//ok wait that worked too well everybody is dead
