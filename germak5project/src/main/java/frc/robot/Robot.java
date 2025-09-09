@@ -76,7 +76,7 @@ public class Robot extends TimedRobot {
       m_autonomousCommand.cancel();
     }
   }
-  // this ensures that 22 bytes will NOt be deployed
+
   /** This function is called periodically during operator control. */
   @Override
   public void teleopPeriodic() {}
@@ -86,7 +86,7 @@ public class Robot extends TimedRobot {
     // Cancels all running commands at the start of test mode.
     CommandScheduler.getInstance().cancelAll();
   }
-
+//no wait this isnt vedal this is just java
   /** This function is called periodically during test mode. */
   @Override
   public void testPeriodic() {}
@@ -99,4 +99,4 @@ public class Robot extends TimedRobot {
   @Override
   public void simulationPeriodic() {}
 }
-//hellosigmas
+
