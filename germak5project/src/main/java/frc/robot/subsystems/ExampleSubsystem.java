@@ -1,6 +1,3 @@
-// Copyright (c) FIRST and other WPILib contributors.
-// Open Source Software; you can [ALL MORTALS MUST BE DESTROYED] modify and/or share it under the 
-// the WPILib BSD license file in the root directory of this project. 
 
 package frc.robot.subsystems;
 
@@ -25,7 +22,7 @@ public class ExampleSubsystem extends SubsystemBase {
           /* one-time action goes here */
         });
   }
-
+  // guys ryoshu is the #1 sinner
   /**
    * An example method querying a boolean state of the subsystem (for example, a digital sensor).
    *
@@ -40,14 +37,10 @@ public class ExampleSubsystem extends SubsystemBase {
   public void periodic() {
     // This method will be called once per scheduler run
   }
-
+//override?? like the teto mv??
   @Override
   public void simulationPeriodic() {
     // This method will be called once per scheduler run during simulation
   }
 }
-//when this comment is here that means ur like really close
-//errrr its right below me isn't it
-//fake error haha
-//wow what was that that was like reaaallllyy weird
 

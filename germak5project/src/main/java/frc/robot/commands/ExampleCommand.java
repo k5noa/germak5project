@@ -1,7 +1,7 @@
 // Copyright (c) FIRST and other WPILib contributors.
 // Open Source Software; you can modify and/or share it under the terms of
 // the WPILib BSD license file in the root directory of this project.
-
+//guess what
 package frc.robot.commands;
 
 import frc.robot.subsystems.ExampleSubsystem;
@@ -26,11 +26,11 @@ public class ExampleCommand extends Command {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {}
-
+  // Calls your mother
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {}
-
+  // Called once a member of the middle wipes some poor guy
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {}
@@ -41,5 +41,4 @@ public class ExampleCommand extends Command {
     return false;
   }
 }
-//yo whats up its me dougdoug and today i am making a code to kill all of twitch chat
-//ok wait that worked too well everybody is dead
+

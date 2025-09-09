@@ -76,7 +76,7 @@ public class Robot extends TimedRobot {
       m_autonomousCommand.cancel();
     }
   }
-//wait is this vedal???
+
   /** This function is called periodically during operator control. */
   @Override
   public void teleopPeriodic() {}
@@ -94,10 +94,9 @@ public class Robot extends TimedRobot {
   /** This function is called once when the robot is first started up. */
   @Override
   public void simulationInit() {}
-
+  /** wop wop wop oppa gangnamstyle */
   /** This function is called periodically whilst in simulation. */
   @Override
   public void simulationPeriodic() {}
 }
-//are we sure though?
-//pretty sure
+
