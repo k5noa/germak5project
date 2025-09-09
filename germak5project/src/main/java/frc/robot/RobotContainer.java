@@ -31,7 +31,7 @@ public class RobotContainer {
     // Configure the trigger bindings
     configureBindings();
   }
-
+//um guys whats going on is the error in here
   /**
    * Use this method to define your trigger->command mappings. Triggers can be created via the
    * {@link Trigger#Trigger(java.util.function.BooleanSupplier)} constructor with an arbitrary
@@ -50,7 +50,7 @@ public class RobotContainer {
     // cancelling on release.
     m_driverController.b().whileTrue(m_exampleSubsystem.exampleMethodCommand());
   }
-
+//nope not in here
   /**
    * Use this to pass the autonomous command to the main {@link Robot} class.
    *
@@ -61,3 +61,4 @@ public class RobotContainer {
     return Autos.exampleAuto(m_exampleSubsystem);
   }
 }
+//you went too low noa
