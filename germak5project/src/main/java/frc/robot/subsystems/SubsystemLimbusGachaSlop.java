@@ -4,17 +4,27 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix6.hardware.TalonFX;
+
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class SubsystemLimbusGachaSlop extends SubsystemBase {
-  /** Creates a new SubsystemLimbusGachaSlop. */
+ private TalonFX LimbusMotor;
   public SubsystemLimbusGachaSlop() {
-    
+    LimbusMotor = new TalonFx(0);
   }
+
+public void MoveLimbusMotor(){
+  LimbusMotor.setVoltage(4);
+}
+
+public void StopLimbusMotor(){
+  LimbusMotor.setVoltage(0);
+}
 
   @Override
   public void periodic() {
-    // This method will be called once per scheduler run
+  //ThisDoesSomething
   }
 }
 //SubsytemLimbusGachaSlopStartNow
