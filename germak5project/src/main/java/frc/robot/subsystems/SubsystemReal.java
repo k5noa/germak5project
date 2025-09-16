@@ -4,12 +4,28 @@
 //subsystemreal
 package frc.robot.subsystems;
 
+import com.ctre.phoenix6.hardware.TalonFX;
+
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class SubsystemReal extends SubsystemBase {
-  /** Creates a new SubsystemReal. */
+    
+  private TalonFX SubsystemMotor;
+
   public SubsystemReal() {
-    SubsystemReal = new TalonFX(deviceid)
+    SubsystemMotor = new TalonFX(1);
+  }
+
+  public void SpinSubsystemMotor(){
+    SubsystemMotor.setVoltage(4);
+  }
+
+  public void StopSubsystemMotor(){
+    SubsystemMotor.setVoltage(0);
+  }
+
+  public void MoveSubsystemMotor(double speed){
+    SubsystemMotor.setVoltage(speed * 12);
   }
 
   @Override
