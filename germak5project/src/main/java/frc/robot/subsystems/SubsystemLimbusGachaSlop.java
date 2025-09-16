@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 public class SubsystemLimbusGachaSlop extends SubsystemBase {
  private TalonFX LimbusMotor;
   public SubsystemLimbusGachaSlop() {
-    LimbusMotor = new TalonFx(0);
+    LimbusMotor = new TalonFX(0);
   }
 
 public void MoveLimbusMotor(){
