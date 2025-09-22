@@ -28,5 +28,6 @@ public class OmegaBoringInstantCommand extends InstantCommand {
   @Override
   public void initialize() {
     boringFriends.StopLimbusMotor();
+    boringFriends.MoveLimbusMotor();
   }
 }
