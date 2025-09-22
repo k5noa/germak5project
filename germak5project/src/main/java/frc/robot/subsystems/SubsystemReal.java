@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class SubsystemReal extends SubsystemBase {
     
-  private TalonFX SubsystemMotor;
+  public TalonFX SubsystemMotor;
 
   public SubsystemReal() {
     SubsystemMotor = new TalonFX(1);

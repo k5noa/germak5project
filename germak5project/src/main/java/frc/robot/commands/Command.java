@@ -5,6 +5,7 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.InstantCommand;
+import edu.wpi.first.wpilibj2.command.Subsystem;
 
 import com.ctre.phoenix6.hardware.TalonFX;
 
@@ -16,11 +17,20 @@ import frc.robot.subsystems.SubsystemReal;
 // information, see:
 // https://docs.wpilib.org/en/stable/docs/software/commandbased/convenience-features.html
 public class Command extends InstantCommand {
+  
+  public SubsystemReal SubReal;
+
   public Command() {
-    // Use addRequirements() here to declare subsystem dependencies.
+      SubReal = new SubsystemReal();
   }
+
+  
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {}
+  public void initialize() {
+    SubReal.SpinSubsystemMotor();
+    SubReal.StopSubsystemMotor();
+  }
+  
 }
