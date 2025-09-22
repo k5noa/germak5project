@@ -16,11 +16,11 @@ import frc.robot.subsystems.SubsystemReal;
 // NOTE:  Consider using this command inline, rather than writing a subclass.  For more
 // information, see:
 // https://docs.wpilib.org/en/stable/docs/software/commandbased/convenience-features.html
-public class Command extends InstantCommand {
+public class Command2 extends InstantCommand {
   
   public SubsystemReal SubReal;
 
-  public Command() {
+  public Command2() {
       SubReal = new SubsystemReal();
   }
 
@@ -29,8 +29,7 @@ public class Command extends InstantCommand {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
-    SubReal.SpinSubsystemMotor();
-    //SubReal.StopSubsystemMotor();
+    SubReal.StopSubsystemMotor();
   }
   
 }
