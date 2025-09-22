@@ -30,7 +30,5 @@ public class Command extends InstantCommand {
   @Override
   public void initialize() {
     SubReal.SpinSubsystemMotor();
-    //SubReal.StopSubsystemMotor();
   }
-  
 }
