@@ -28,6 +28,10 @@ public class SuperEpicMegaInstantCommandFriends extends InstantCommand {
   @Override
   public void initialize() {
     EpicFriends.MoveLimbusMotor();
+<<<<<<< HEAD
    
+=======
+    EpicFriends.StopLimbusMotor();
+>>>>>>> origin/BranchEpic3
   }
 }
