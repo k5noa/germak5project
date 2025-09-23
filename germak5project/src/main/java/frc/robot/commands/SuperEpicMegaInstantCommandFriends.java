@@ -17,9 +17,9 @@ public class SuperEpicMegaInstantCommandFriends extends InstantCommand {
 
   private SubsystemLimbusGachaSlop EpicFriends;
 
-  public SuperEpicMegaInstantCommandFriends() {
+  public SuperEpicMegaInstantCommandFriends(SubsystemLimbusGachaSlop Gregor) {
 
-    EpicFriends = new SubsystemLimbusGachaSlop();
+    EpicFriends = Gregor;
 
     // Use addRequirements() here to declare subsystem dependencies.
   }

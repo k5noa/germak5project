@@ -17,9 +17,9 @@ public class OmegaBoringInstantCommand extends InstantCommand {
 
   private SubsystemLimbusGachaSlop boringFriends;
 
-  public OmegaBoringInstantCommand() {
+  public OmegaBoringInstantCommand(SubsystemLimbusGachaSlop Rodion) {
 
-    boringFriends = new SubsystemLimbusGachaSlop();
+    boringFriends = Rodion;
 
     // Use addRequirements() here to declare subsystem dependencies.
   }

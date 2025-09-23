@@ -11,6 +11,9 @@ import frc.robot.subsystems.ExampleSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
+import frc.robot.subsystems.SubsystemLimbusGachaSlop;
+import frc.robot.commands.OmegaBoringInstantCommand;
+import frc.robot.commands.SuperEpicMegaInstantCommandFriends;
 //buhbuhboybuhbuhboy
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -26,9 +29,17 @@ public class RobotContainer {
   private final CommandXboxController m_driverController =
       new CommandXboxController(OperatorConstants.kDriverControllerPort);
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
+  public SubsystemLimbusGachaSlop SuperColab;
+  public SuperEpicMegaInstantCommandFriends commandFriends;
+  public OmegaBoringInstantCommand omegaFriends;
   public RobotContainer() {
+    SuperColab = new SubsystemLimbusGachaSlop();
+    commandFriends = new SuperEpicMegaInstantCommandFriends(SuperColab);
+    omegaFriends = new OmegaBoringInstantCommand(SuperColab);
     // Configure the trigger bindings
     configureBindings();
+
+  
   }
 
   /**
@@ -47,7 +58,8 @@ public class RobotContainer {
 
     // Schedule `exampleMethodCommand` when the Xbox controller's B button is pressed,
     // cancelling on release.
-    m_driverController.b().whileTrue(m_exampleSubsystem.exampleMethodCommand());
+    m_driverController.b().onTrue(omegaFriends);
+    m_driverController.x().onTrue(commandFriends);
   }
 //nope not in here
   /**
