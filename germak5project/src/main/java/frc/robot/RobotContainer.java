@@ -11,7 +11,9 @@ import frc.robot.subsystems.ExampleSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
-//buhbuhboybuhbuhboy
+import frc.robot.subsystems.SubsystemReal;
+import frc.robot.commands.Command2;
+import frc.robot.commands.Command1;
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
  * "declarative" paradigm, very little robot logic should actually be handled in the {@link Robot}
@@ -26,8 +28,13 @@ public class RobotContainer {
   private final CommandXboxController m_driverController =
       new CommandXboxController(OperatorConstants.kDriverControllerPort);
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
+  public SubsystemReal SubReal;
+  public Command1 com1;
+  public Command2 com2;
   public RobotContainer() {
-    // Configure the trigger bindings
+    SubReal = new SubsystemReal();
+    com1 = new Command1(SubReal);
+    com2 = new Command2(SubReal);
     configureBindings();
   }
 
@@ -47,9 +54,10 @@ public class RobotContainer {
 
     // Schedule `exampleMethodCommand` when the Xbox controller's B button is pressed,
     // cancelling on release.
-    m_driverController.b().whileTrue(m_exampleSubsystem.exampleMethodCommand());
+    m_driverController.b().onTrue(com1);
+    m_driverController.x().onTrue(com2);
   }
-//nope not in here
+
   /**
    * Use this to pass the autonomous command to the main {@link Robot} class.
    *
@@ -60,4 +68,3 @@ public class RobotContainer {
     return Autos.exampleAuto(m_exampleSubsystem);
   }
 }
-//you went too low noa

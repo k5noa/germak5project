@@ -20,8 +20,8 @@ public class Command2 extends InstantCommand {
   
   public SubsystemReal SubReal;
 
-  public Command2() {
-      SubReal = new SubsystemReal();
+  public Command2(SubsystemReal c2) {
+      SubReal = c2;
   }
 
   

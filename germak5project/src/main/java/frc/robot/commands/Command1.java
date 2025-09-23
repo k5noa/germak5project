@@ -16,12 +16,12 @@ import frc.robot.subsystems.SubsystemReal;
 // NOTE:  Consider using this command inline, rather than writing a subclass.  For more
 // information, see:
 // https://docs.wpilib.org/en/stable/docs/software/commandbased/convenience-features.html
-public class Command extends InstantCommand {
+public class Command1 extends InstantCommand {
   
   public SubsystemReal SubReal;
 
-  public Command() {
-      SubReal = new SubsystemReal();
+  public Command1(SubsystemReal c1) {
+      SubReal = c1;
   }
 
   
