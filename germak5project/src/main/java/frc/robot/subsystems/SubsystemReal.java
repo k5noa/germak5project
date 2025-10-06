@@ -6,11 +6,14 @@ package frc.robot.subsystems;
 
 import com.ctre.phoenix6.hardware.TalonFX;
 
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class SubsystemReal extends SubsystemBase {
     
-  public TalonFX SubsystemMotor;
+  private TalonFX SubsystemMotor;
+  public String textPlaceholder = "I'm shi association east section 3 faust!";
 
   public SubsystemReal() {
     SubsystemMotor = new TalonFX(1);
@@ -30,6 +33,6 @@ public class SubsystemReal extends SubsystemBase {
 
   @Override
   public void periodic() {
-    // This method will be called once per scheduler run
+    SmartDashboard.putString("Which id is faust using?", textPlaceholder);
   }
 }
